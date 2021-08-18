@@ -1,0 +1,10 @@
+clc; clear;
+x = 0:0.1:10;
+longitud = length(x);
+y = sin(x);
+z = cos(x);
+plot(x,y, 'r', 'linewidth', 2);
+hold on;
+plot(x,z, 'b', 'linewidth', 2);
+grid on;
+title(sprintf('Gráficas de las funciones sin y cos para un vector x de longitud %d', longitud), 'fontSize', 15, 'fontName', 'courier', 'color', [0 0 1]);

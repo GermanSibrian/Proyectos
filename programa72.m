@@ -1,0 +1,15 @@
+clc; clear;
+meses = 1:12;
+gastos = [10 7 3 5 8 9 9 4 6 7 12 13];
+ingresos = [7 9 12 12 8 14 13 15 10 13 10 15];
+resultado = ingresos-gastos;
+subplot(2,2,1);
+bar(meses, gastos, 'r');
+title('Gastos vs meses');
+subplot(2,2,2);
+bar(meses, ingresos, 'b');
+title('Ingresos vs meses');
+subplot(2,2,3:4);
+plot(meses, resultado, '-ok', 'lineWidth', 2);
+title('Resultado vs meses');
+grid on;
